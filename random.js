@@ -1,9 +1,4 @@
-var React = require('react');
-var PropTypes = React.PropTypes;
 
-function Forecast(props) {
-  return(
-  <div>
     <div>
       <h1 className='col-sm-8 col-sm-offset-4'>{props.cityState}</h1>
       <h3 className='col-sm-8 col-sm-offset-4'>Select a day</h3>
@@ -14,14 +9,3 @@ function Forecast(props) {
                                      </li>)}
       </ul>
     </div>
-  </div>
-  )
-}
-
-Forecast.propTypes = {
-  onForecastClick: PropTypes.func.isRequired,
-  forecasts: PropTypes.array.isRequired,
-  cityState: PropTypes.string.isRequired
-}
-
-module.exports = Forecast;
