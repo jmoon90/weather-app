@@ -3,8 +3,6 @@ var CityStateInput = require('./CityStateInput');
 
 var divStyle = {
   backgroundColor: 'rgba(252, 90, 44, 0.89)',
-  height: '100%',
-  width: '100%',
   padding: '20px 0 ',
 }
 

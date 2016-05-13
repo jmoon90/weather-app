@@ -11,12 +11,10 @@ var divStyle = {
 var Home = React.createClass({
   render: function() {
     return(
-      <Navbar>
-        <div style={divStyle}>
-          <h1>Enter a City and State</h1>
-          <CityStateInput />
-        </div>
-      </Navbar>
+      <div>
+        <h1>Enter a City and State</h1>
+        <CityStateInput />
+      </div>
     )
   }
 })
