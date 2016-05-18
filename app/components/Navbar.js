@@ -1,19 +1,27 @@
 var React = require('react');
 var CityStateInput = require('./CityStateInput');
 
-var divStyle = {
-  backgroundColor: 'rgba(252, 90, 44, 0.89)',
-  padding: '20px 0 ',
+var styles = {
+  container: {
+    width: '100%',
+    height: '92%'
+  },
+  header :{
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    background: 'rgba(252, 90, 44, 0.89)',
+    color: '#fff',
+    padding: 5,
+  }
 }
 
 var Navbar = React.createClass({
   render: function() {
     return(
-      <div class='navbar' style={divStyle}>
-        <div className='col-sm-6'>
-          <h1>Weather Program</h1>
-        </div>
-        <div className='col-sm-6'>
+      <div style={styles.container}>
+        <div style={styles.header}>
+          <h2 style={{margin: 0}}>Weather Program</h2>
           <CityStateInput />
         </div>
         {this.props.children}
